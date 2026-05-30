@@ -1,0 +1,93 @@
+.analitik-container {
+  padding: 40px;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.analitik-header h1 {
+  color: #016630;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.analitik-header p {
+  color: #727272;
+  margin-bottom: 40px;
+}
+
+.analitik-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.analitik-card {
+  background: white;
+  border: 0.5px solid #34c759;
+  border-radius: 21px;
+  padding: 25px;
+}
+
+.card-title {
+  color: #016630;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.income-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  background: #f9fafb;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+.income-item.highlight {
+  background: #f0fdf4;
+}
+
+.price {
+  color: #00a63e;
+  font-weight: 700;
+}
+
+.popular-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+}
+
+.rank-badge {
+  width: 35px;
+  height: 35px;
+  background: #dbfce7;
+  color: #008236;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.item-name {
+  font-weight: 600;
+  color: #222;
+}
+
+.item-count {
+  color: #6b7280;
+  font-size: 14px;
+}

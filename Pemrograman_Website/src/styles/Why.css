@@ -1,0 +1,58 @@
+.why {
+  padding: 5rem 0;
+  background: #f7faf8;
+  text-align: center;
+}
+
+.why__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #334b35;
+  margin-bottom: 0.4rem;
+}
+
+.why__subtitle {
+  font-size: 0.95rem;
+  color: #5f6f66;
+  margin-bottom: 2rem;
+}
+
+.why__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #d4dbd8;
+  padding: 1.8rem;
+  text-align: center;
+  transition: 0.25s;
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: #2d4a3e;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #5f6f66;
+  line-height: 1.5;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(45, 74, 62, 0.12);
+}
+
+@media (max-width: 768px) {
+  .why__grid {
+    grid-template-columns: 1fr;
+  }
+}

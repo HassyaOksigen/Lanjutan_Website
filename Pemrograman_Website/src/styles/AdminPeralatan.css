@@ -1,0 +1,388 @@
+/* src/styles/AdminPeralatan.css */
+
+.admin-global-scope {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9fafb;
+}
+
+.admin-global-scope .navbar {
+  height: 80px;
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.admin-global-scope .logo {
+  height: 40px;
+}
+
+.admin-global-scope .user-role {
+  color: #064e3b;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.admin-global-scope .main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.admin-global-scope .dashboard-header h1 {
+  color: #064e3b;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.admin-global-scope .dashboard-header p {
+  color: #6b7280;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.admin-global-scope .stats-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.admin-global-scope .stat-card {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 15px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-global-scope .stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.admin-global-scope .stat-label {
+  color: #6b7280;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.admin-global-scope .stat-value {
+  font-size: 36px;
+  font-weight: 700;
+  color: #10b981;
+}
+
+.admin-global-scope .tab-navigation {
+  display: flex;
+  background: #f3f4f6;
+  padding: 6px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  border: 1px solid #e5e7eb;
+  height: 50px;
+}
+
+.admin-global-scope .tab-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #4b5563;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: 0.2s;
+}
+
+.admin-global-scope .tab-btn.active {
+  background: white;
+  color: #064e3b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.admin-global-scope .management-box {
+  background: white;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.admin-global-scope .management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.admin-global-scope .management-header h2 {
+  color: #1b4d3e;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.admin-global-scope .btn-add {
+  background-color: #00b140;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.admin-global-scope .tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.admin-global-scope .tool-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-global-scope .tool-card-header {
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.admin-global-scope .tool-card-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a202c;
+  width: auto;
+}
+
+.admin-global-scope .status-badge {
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 700;
+  color: white !important;
+  white-space: nowrap;
+}
+
+.admin-global-scope .status-badge.tersedia {
+  background-color: #00b140;
+}
+
+.admin-global-scope .status-badge.disewa {
+  background-color: #f59e0b;
+}
+
+.admin-global-scope .category {
+  display: block;
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.admin-global-scope .detail-row {
+  display: flex !important;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 8px;
+}
+
+.admin-global-scope .detail-label {
+  color: #718096;
+  font-size: 15px;
+  width: 100px;
+}
+
+.admin-global-scope .detail-value {
+  font-weight: 450;
+  color: #1a202c;
+  font-size: 16px;
+}
+
+.admin-global-scope .tool-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.admin-global-scope .btn-edit,
+.admin-global-scope .btn-delete {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;
+  transition: 0.2s;
+}
+
+.admin-global-scope .btn-edit {
+  border: 1px solid #dae7ff;
+  color: #3182ce;
+}
+
+.admin-global-scope .btn-delete {
+  border: 1px solid #fdd1d1;
+  color: #e53e3e;
+}
+
+.admin-global-scope .btn-edit:hover {
+  background: #eff6ff;
+}
+
+.admin-global-scope .btn-delete:hover {
+  background: #fef2f2;
+}
+
+.admin-global-scope .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.admin-global-scope .modal-content {
+  background: white;
+  width: 100%;
+  max-width: 650px;
+  max-height: 90vh;
+  border-radius: 16px;
+  padding: 30px 40px;
+  position: relative;
+  overflow-y: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.admin-global-scope .close-x {
+  position: absolute !important;
+  top: 25px !important;
+  right: 30px !important;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  cursor: pointer;
+}
+
+.admin-global-scope .close-x:hover {
+  color: #282626 !important;
+}
+
+.admin-global-scope .form-section {
+  margin-bottom: 25px;
+}
+
+.admin-global-scope .form-section h3 {
+  color: #064e3b;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.admin-global-scope .form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.admin-global-scope .form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.admin-global-scope .form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.admin-global-scope .form-group input,
+.admin-global-scope .form-group select,
+.admin-global-scope .form-group textarea {
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.admin-global-scope .upload-box {
+  border: 2px dashed #e5e7eb;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.admin-global-scope .upload-icon-img {
+  width: 32px;
+  margin-bottom: 10px;
+}
+
+.admin-global-scope .modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.admin-global-scope .btn-batal {
+  flex: 1;
+  padding: 12px;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+}
+
+.admin-global-scope .btn-submit {
+  flex: 1;
+  padding: 12px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-global-scope .footer-spacer {
+  height: 250px;
+  background-color: #364531;
+  margin-top: 60px;
+}

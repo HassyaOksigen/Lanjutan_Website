@@ -1,0 +1,175 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 64px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* LOGO */
+
+.logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+/* LINKS */
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: #00a63e;
+}
+
+.nav-link.active {
+  color: #00a63e;
+  font-weight: 600;
+}
+
+/* AUTH BUTTON */
+
+.navbar__auth {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.btn {
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+/* ghost */
+
+.btn--ghost {
+  background: transparent;
+  color: #333;
+}
+
+.btn--ghost:hover {
+  background: #f1f1f1;
+}
+
+/* primary */
+
+.btn--primary {
+  background: #00a63e;
+  color: white;
+}
+
+.btn--primary:hover {
+  background: #008c34;
+}
+
+/* hamburger */
+
+.navbar__hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* Gabungkan Admin dan Logout ke samping */
+.user-nav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+.user-profile {
+  font-weight: 600;
+  color: #333;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #33363F;
+  padding: 5px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  background-color: #1a0707;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .logout-text {
+    display: none;
+  }
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+  .navbar__links {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  }
+
+  .navbar__links.open {
+    display: flex;
+  }
+
+  .navbar__auth {
+    display: none;
+  }
+
+  .navbar__hamburger {
+    display: block;
+  }
+
+  .navbar__links button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+  }
+}
